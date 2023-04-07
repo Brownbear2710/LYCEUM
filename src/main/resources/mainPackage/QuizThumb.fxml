@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="quizThumbHBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#quizSelected" prefHeight="69.0" prefWidth="1000.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.QuizThumbController">
+   <children>
+      <Label fx:id="dateBox" prefHeight="38.0" prefWidth="256.0" text="Date">
+         <HBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="titleBox" prefHeight="38.0" prefWidth="256.0" text="QuizTitle">
+         <HBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="timeBox" prefHeight="38.0" prefWidth="256.0" text="Time">
+         <HBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>

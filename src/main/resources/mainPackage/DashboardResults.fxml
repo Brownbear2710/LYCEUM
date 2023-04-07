@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1127.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.DashboardResultsController">
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="287.0" style="-fx-background-color: #005b65;" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="275.0" prefWidth="287.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="94.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Asset_1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="LYCEUM">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="37.0" />
+                     </font>
+                  </Text>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                      <Button mnemonicParsing="false" onAction="#onProfileButtonClick" prefHeight="51.0" prefWidth="403.0" styleClass="sideButton" text="Profile">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                  </Button>
+                      <Button mnemonicParsing="false" onAction="#onClassroomButtonClick" prefHeight="51.0" prefWidth="313.0" styleClass="sideButton" text="Classrooms">
+                          <font>
+                              <Font size="22.0" />
+                          </font>
+                  </Button>
+                      <Button mnemonicParsing="false" onAction="#onQuizButtonClick" prefHeight="51.0" prefWidth="362.0" styleClass="selectedButton" text="Results">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                      <Button mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="51.0" prefWidth="343.0" styleClass="sideButtonLogout" text="Logout">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <ScrollPane fx:id="scp" prefHeight="200.0" prefWidth="714.0" BorderPane.alignment="CENTER">
+            <content>
+                <GridPane fx:id="gridPane" hgap="10.0" prefHeight="56.0" prefWidth="111.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.20001220703125" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="865.4" minWidth="10.0" prefWidth="1000.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="55.6" minHeight="10.0" prefHeight="55.6" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="29.200003051757804" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <HBox layoutX="252.0" layoutY="10.0" prefHeight="100.0" prefWidth="0.0" />
+               </children>
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

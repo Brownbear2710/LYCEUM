@@ -1,0 +1,51 @@
+.root {
+    /*-fx-background-color: #c4d7da;*/
+    -fx-background-image: url("someRandomBG.png");
+    -fx-background-size: cover;
+    -fx-background-opacity: 0.5 ;
+}
+.exceptionLabel {
+    -fx-font-size: 16;
+    -fx-text-fill: "red";
+    -fx-font-family: "system";
+    -fx-alignment: center;
+}
+
+
+.button1 {
+    -fx-background-color: #005b65;
+    /*#007286;*/
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-background-radius: 20;
+}
+.button1:hover {
+    -fx-background-color: #003741;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-background-radius: 20;
+}
+.button1:pressed {
+    -fx-background-color: #001E21;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    /*-fx-font-size: 14px;*/
+    -fx-background-radius: 20;
+}
+
+#backIcon {
+    /*-fx-graphic: url("img.png");*/
+    -fx-background-image: url("GoBack.png") ;
+    -fx-background-size: cover;
+    -fx-background-radius: 20;
+    /*-fx-background-color: #007286;*/
+    /*-fx-background-position: center;*/
+}
+#backIcon:hover {
+    -fx-background-radius: 20;
+    -fx-background-image: url("GoBackHover.png");
+    /*-fx-background-position: center;*/
+    -fx-background-size: cover;
+}

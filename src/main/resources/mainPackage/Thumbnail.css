@@ -1,0 +1,45 @@
+.BG {
+    -fx-background-image: url("notSelected.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: rgba(0,0,0,0);
+}
+.BG:hover {
+    -fx-background-image: url("selected.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+    -fx-background-color: rgba(0,0,0,0);
+}
+.label1 {
+    -fx-font-family: "system";
+    -fx-text-fill: "black";
+    -fx-font-size: 20px;
+}
+.label2 {
+    -fx-font-family: "system";
+    -fx-text-fill: "black";
+    -fx-font-size: 15px;
+}
+
+.addButton {
+    -fx-text-fill: #007286;
+    -fx-font-size: 120px;
+}
+.addButton:hover {
+    -fx-text-fill: #004e59;
+    -fx-font-size: 120px;
+}
+
+.addButton:pressed {
+    -fx-text-fill: #242d35;
+    -fx-font-size: 120px;
+}
+
+.selectableText {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-highlight-fill: #004e59;
+    -fx-highlight-text-fill: #ffffff;
+}

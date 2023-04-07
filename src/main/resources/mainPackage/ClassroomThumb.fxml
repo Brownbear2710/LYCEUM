@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onClassClick" prefHeight="181.0" prefWidth="271.0" styleClass="BG" stylesheets="@Thumbnail.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.ClassroomThumbController">
+   <children>
+      <TextField fx:id="subject" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="253.0" styleClass="selectableText" text="Subject:">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="classroomCode" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" styleClass="selectableText" text="Class Code:">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="teacherDP" fitHeight="76.0" fitWidth="76.0" pickOnBounds="true">
+         <VBox.margin>
+            <Insets right="10.0" top="5.0" />
+         </VBox.margin>
+      </ImageView>
+   </children>
+</VBox>

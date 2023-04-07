@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="639.0" maxWidth="838.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="838.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.ClassroomTeacherViewController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button id="backIcon" mnemonicParsing="false" onAction="#onGoBackButtonClick" prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="40.0" prefWidth="179.0" styleClass="exitButton" text="Delete Room">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="205.0" prefWidth="162.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="359.0" prefWidth="318.0">
+               <children>
+                  <TextField fx:id="subject" alignment="CENTER" editable="false" styleClass="selectableText" text="Classroom Name">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="classcode" alignment="CENTER" editable="false" styleClass="selectableText" text="Claaroom Code">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onAddQuizButtonClick" prefHeight="40.0" prefWidth="166.0" text="Add Quiz">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onUpcomingButtonClick" prefHeight="40.0" prefWidth="166.0" text="Upcoming Quiz">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPreviousButtonClick" prefHeight="40.0" prefWidth="166.0" text="Previous Quiz">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onStudentListButtonClick" prefHeight="40.0" prefWidth="166.0" text="Student List">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefWidth="162.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="84.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

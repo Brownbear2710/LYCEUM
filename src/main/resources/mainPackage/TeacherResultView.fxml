@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="906.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.TeacherResultViewController">
+   <children>
+      <HBox prefHeight="146.0" prefWidth="906.0">
+         <children>
+            <Button id="backIcon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="40.0" prefWidth="40.0" text=" ">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="100.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <VBox prefHeight="141.0" prefWidth="654.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label id="make_an_Exception2" fx:id="quizNameLabel" prefHeight="36.0" prefWidth="696.0" style="-fx-alignment: center-left;" styleClass="make_an_Exception2" text="Quiz Name : ">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="20.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="timeLabel" prefHeight="36.0" prefWidth="654.0" style="-fx-alignment: center-left;" styleClass="make_an_Exception2" text="Time: ">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="exceptionLabel" prefHeight="27.0" prefWidth="803.0" style="-fx-alignment: center-left;" styleClass="exceptionLabel" text="Exception Label">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </VBox.margin></Label>
+               </children></VBox>
+            <Button fx:id="mailButton" mnemonicParsing="false" onAction="#mailResultClick" prefHeight="40.0" prefWidth="138.0" text="Mail Result">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="302.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="236.0" prefWidth="158.0" />
+            <VBox prefHeight="236.0" prefWidth="838.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="74.0" prefWidth="860.0" vbarPolicy="NEVER" VBox.vgrow="NEVER">
+                     <content>
+                        <GridPane fx:id="titleGridpane" alignment="CENTER" prefHeight="42.0" prefWidth="800.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="294.0" prefWidth="528.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <GridPane fx:id="realG" alignment="CENTER" prefHeight="42.0" prefWidth="780.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

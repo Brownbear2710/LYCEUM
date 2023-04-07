@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#quizSelected" prefHeight="127.0" prefWidth="1000.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.QuizThumbController">
+   <children>
+      <Label fx:id="firstTitle" prefHeight="55.0" prefWidth="256.0" styleClass="titleText" text="Date" textAlignment="CENTER">
+         <HBox.margin>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+         </HBox.margin>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+      <Label fx:id="secondTitle" prefHeight="55.0" prefWidth="256.0" styleClass="titleText" text="Quiz Name" textAlignment="CENTER">
+         <HBox.margin>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+         </HBox.margin>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+      <Label fx:id="thirdTitle" prefHeight="55.0" prefWidth="256.0" styleClass="titleText" text="Time" textAlignment="CENTER">
+         <HBox.margin>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+         </HBox.margin>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+   </children>
+</HBox>

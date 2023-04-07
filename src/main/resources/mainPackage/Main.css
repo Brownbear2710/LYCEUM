@@ -1,0 +1,317 @@
+.root {
+    /*-fx-background-color: #c4d7da;*/
+    -fx-background-image: url("someRandomBG.png");
+    -fx-background-size: cover;
+    -fx-background-opacity: 0.5 ;
+}
+
+.label {
+    -fx-font-size: 18;
+    -fx-text-fill: "black";
+    -fx-font-family: "system";
+    -fx-alignment: center;
+}
+
+.exceptionLabel {
+    -fx-font-size: 16;
+    -fx-text-fill: "red";
+    -fx-font-family: "system";
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: #005b65;
+    /*#007286;*/
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-background-radius: 20;
+}
+.button:hover {
+    -fx-background-color: #003741;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-background-radius: 20;
+}
+.button:pressed {
+    -fx-background-color: #001E21;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    /*-fx-font-size: 14px;*/
+    -fx-background-radius: 20;
+}
+
+.exitButton {
+    -fx-background-color: #005b65;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-background-radius: 40;
+}
+.exitButton:hover {
+    -fx-background-color: #a92b2b;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-background-radius: 40;
+}
+.exitButton:pressed {
+    -fx-background-color: #210000;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    /*-fx-font-size: 14px;*/
+    -fx-background-radius: 40;
+}
+
+.sideButton {
+    -fx-background-color: #005b65;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 18px;
+}
+.sideButton:hover {
+    -fx-background-color: #003741;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 20px;
+}
+.sideButton:pressed {
+    -fx-background-color: #001E21;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 20px;
+}
+
+.sideButtonLogout {
+    -fx-background-color: #005b65;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 18px;
+}
+.sideButtonLogout:hover {
+    -fx-background-color: #a92b2b;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 20px;
+}
+.sideButtonLogout:pressed {
+    -fx-background-color: #210000;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-font-size: 20px;
+}
+
+.selectedButton {
+    -fx-background-color: #001E21;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    /*-fx-border-color: white;*/
+    /*-fx-border-width: 2px;*/
+    /*-fx-border-radius: 40;*/
+    -fx-font-size: 22px;
+}
+.selectedButton:hover {
+    -fx-background-color: #001E21;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    /*-fx-border-color: white;*/
+    /*-fx-border-width: 2px;*/
+    /*-fx-border-radius: 40;*/
+    -fx-font-size: 22px;
+}
+
+.goBack {
+    -fx-background-color: #007286;
+    -fx-background-radius: 40;
+}
+.goBack:hover {
+    -fx-background-color: #242d35;
+    -fx-background-radius: 40;
+}
+
+#backIcon {
+    /*-fx-graphic: url("img.png");*/
+    -fx-background-image: url("GoBack.png") ;
+    -fx-background-size: cover;
+    /*-fx-background-color: #007286;*/
+    /*-fx-background-position: center;*/
+}
+#backIcon:hover {
+    -fx-background-image: url("GoBackHover.png");
+    /*-fx-background-position: center;*/
+    -fx-background-size: cover;
+}
+
+.combo-box-base {
+    -fx-background-radius: 40;
+}
+
+.text-field {
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.76);
+}
+.password-field {
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.76);
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.grid-pane {
+    -fx-background-color: transparent;
+}
+#quizThumbHBox{
+    -fx-background-radius:20px;
+}
+#quizThumbHBox:hover
+{
+    -fx-background-color: #005b65;
+
+}
+#quizThumbHBox:pressed
+{
+    -fx-background-color: #002a2c;
+}
+
+.titleText {
+    -fx-font-family: "system";
+    /*-fx-font-weight: bold;*/
+    /*-fx-text-decoration: underline;*/
+    -fx-font-size: 23px;
+    -fx-border-color: black, transparent, black;
+    -fx-border-width: 0 0 1 0, 0 0 1 0, 0 0 1 0;
+    -fx-border-insets: 0 0 1 0, 0 0 2 0, 0 0 3 0;
+}
+
+.label1 {
+    -fx-font-family: "system";
+    -fx-text-fill: "black";
+    -fx-font-size: 20px;
+}
+.label2 {
+    -fx-font-family: "system";
+    -fx-text-fill: "black";
+    -fx-font-size: 15px;
+}
+
+.greenButton {
+    -fx-background-color: #005b65;
+    /*#007286;*/
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-background-radius: 20;
+}
+.greenButton:hover {
+    -fx-background-color: #06a100;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-background-radius: 20;
+}
+.greenButton:pressed {
+    -fx-background-color: #011f00;
+    /*-fx-padding: 3 30 3 30;*/
+    -fx-text-fill: #ffffff;
+    /*-fx-font-size: 14px;*/
+    -fx-background-radius: 20;
+}
+
+.selectableText {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-highlight-fill: #004e59;
+    -fx-highlight-text-fill: #ffffff;
+}
+
+.text-area {
+    -fx-font-size: 15;
+    -fx-text-fill: blaPck;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: tranparent;
+    -fx-border-color: #005b65;
+    -fx-border-radius: 20;
+    -fx-padding: 5px;
+}
+
+.borderlessTextArea {
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: tranparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20;
+    -fx-padding: 5px;
+}
+.scroll-pane > .scroll-bar:vertical {
+    -fx-background-color: #002a2c;
+    /*-fx-background-insets: 100;*/
+}
+
+.scroll-pane > .scroll-bar:horizontal {
+    -fx-background-color: #002a2c;
+    -fx-background-insets: 100;
+}
+
+.scroll-pane > .scroll-bar .thumb {
+
+    -fx-pref-width: 20px;
+    -fx-background-color: #005b65;
+    -fx-background-radius: 10;
+}
+
+.scroll-pane > .scroll-bar .increment-button,
+.scroll-pane > .scroll-bar .decrement-button {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 25px;
+    -fx-background-color: #005b65;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #002a2c;
+    -fx-background-radius: 5;
+}
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #002a2c;
+}
+
+. make_an_Exception1 {
+    -fx-font-size: 50;
+}
+. make_an_Exception2 {
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+}
+
+.AnswerTextArea {
+
+    -fx-border-color: #004e59;
+    -fx-text-fill: #208338;
+    -fx-control-inner-background: #e8e8e8;
+    -fx-border-width: 8px;
+    /*-fx-font-weight: bold;*/
+}
+
+
+#StudentThumb{
+    -fx-background-radius:20px;
+}
+#StudentThumb:hover
+{
+    -fx-background-color: rgba(0, 91, 101, 0.09);
+
+}
+
+.immg {
+    -fx-border-radius: 100;
+}
