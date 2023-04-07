@@ -19,7 +19,7 @@ public class MailService {
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("lyceumservice@gmail.com", "bigkdgbamfkzrpgl");
+                return new PasswordAuthentication("lyceumservice@gmail.com", "grlcsuzzsgayycjy");
             }
         });
         session.setDebug(true);
@@ -51,7 +51,7 @@ public class MailService {
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("lyceumservice@gmail.com", "bigkdgbamfkzrpgl");
+                return new PasswordAuthentication("lyceumservice@gmail.com", "grlcsuzzsgayycjy");
             }
         });
 //        session.setDebug(true);
